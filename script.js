@@ -21,6 +21,10 @@ $(document).ready(function(){
             hibakszama++
             $("#akasztofa").attr("src","f"+hibakszama+".png")
             $("#tippeltbetuk").append(`${leutottbetuk[leutesekszama]}`);
+            if(leutesekszama==11){
+                $("#Over").css("display","flex");
+                $(".card").css("display","none");
+            }
         }
         leutesekszama++;
     });
